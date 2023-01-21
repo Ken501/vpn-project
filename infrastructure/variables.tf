@@ -25,6 +25,12 @@ variable "environment" {
   type = string
 }
 
+variable "additional_tags" {
+  default     = {}
+  description = "Tags used to identify the project and environment"
+  type        = map(string)
+}
+
 // Backend variables
 
 variable "backend_bucket" {
