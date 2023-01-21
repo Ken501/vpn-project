@@ -32,7 +32,7 @@ resource "aws_security_group_rule" "open_ssh" {
   security_group_id = aws_security_group.instance_sg.id
 }
 
-# VPC Peer 1 security group rules
+// VPC Peer 1 security group rules
 
 resource "aws_security_group_rule" "peer1_ingress" {
   cidr_blocks       = ["10.10.0.0/16"]
@@ -44,7 +44,7 @@ resource "aws_security_group_rule" "peer1_ingress" {
   security_group_id = aws_security_group.instance_sg.id
 }
 
-# VPC Peer 2 security group rules
+// VPC Peer 2 security group rules
 
 resource "aws_security_group_rule" "peer2_ingress" {
   cidr_blocks       = ["10.132.20.0/22"]
@@ -56,7 +56,7 @@ resource "aws_security_group_rule" "peer2_ingress" {
   security_group_id = aws_security_group.instance_sg.id
 }
 
-# VPC Peer 3 security group rules
+// VPC Peer 3 security group rules
 
 resource "aws_security_group_rule" "peer3_ingress" {
   cidr_blocks       = ["10.207.0.0/22"]
