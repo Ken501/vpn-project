@@ -27,6 +27,28 @@ Repository for AWS VPN Gateway and VPC Peering. The EC2 will be ssh ready within
 # Directory Tree Structure
 
 ```
+├── LICENSE
+├── README.md
+├── infrastructure
+│   ├── backend.tf
+│   ├── iam.tf
+│   ├── instance.tf
+│   ├── locals.tf
+│   ├── outputs.tf
+│   ├── provider.tf
+│   ├── s3.tf
+│   ├── sg.tf
+│   ├── variables.tf
+│   ├── vpc-peering.tf
+│   ├── vpc.tf
+│   └── vpn.tf
+├── scripts
+│   └── user-data.sh
+└── yaml
+    ├── infrastructure-ci.yaml
+    └── templates
+        ├── destroy-infrastructure.yaml
+        └── infrastructure-cd.yaml
 ```
 
 # Terraform Resources
