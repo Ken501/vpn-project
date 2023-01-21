@@ -90,13 +90,13 @@ variable "customer_gateway_ip" {
 }
 
 variable "cidr_route_1" {
-  description = "Customer gateway IP address"
+  description = "CIDR route 1"
 }
 
 variable "cidr_route_2" {
-  description = "Customer gateway IP address"
+  description = "CIDR route 2"
 }
 
 variable "cidr_route_3" {
-  description = "Customer gateway IP address"
+  description = "CIDR route 3"
 }
