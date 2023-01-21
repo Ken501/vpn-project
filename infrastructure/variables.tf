@@ -78,3 +78,25 @@ variable "instance_type" {
   description = "Default instance type"
   default     = "t2.micro"
 }
+
+// VPN variables for static route config
+
+variable "bgp_asn" {
+  description = "Border Gateway protocol autonomous system number"
+}
+
+variable "customer_gateway_ip" {
+  description = "Customer gateway IP address"
+}
+
+variable "cidr_route_1" {
+  description = "Customer gateway IP address"
+}
+
+variable "cidr_route_2" {
+  description = "Customer gateway IP address"
+}
+
+variable "cidr_route_3" {
+  description = "Customer gateway IP address"
+}
