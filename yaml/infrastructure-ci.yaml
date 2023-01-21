@@ -12,15 +12,13 @@ trigger:
     - infrastructure
     exclude:
     - .attachments
-    - code
+    - scripts
     - yaml
-    - k8s
-    - charts
 
 variables:
 - group: 'aws-keys'
 - name: app_name
-  value: 'k8s'
+  value: 'my-vpn'
 - name: 'tf.path'
   value: 'infrastructure'
 
