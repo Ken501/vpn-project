@@ -20,6 +20,10 @@ variable "app_name" {
   type = string
 }
 
+variable "key_name" {
+  description = "SSH key"
+}
+
 variable "environment" {
   description = "Application lifecycle stage"
   type = string
