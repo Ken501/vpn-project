@@ -8,6 +8,9 @@ Project to setup VPN and Network peering in AWS VPC. This was a project done for
 # Introduction
 Repository for AWS VPN Gateway and VPC Peering. The EC2 will be ssh ready within the subnet private network once VPN connectivity is established with the assistance of a network engineer for bgp_asn and cidr block distribution. EC2 is used to test iam profile and on-prem connectivity as well as peer connectivity using ICMP. Security group rules harden the network to limit the ingress and egress of all resources. Routes have been configured statically.
 
+# CI/CD
+A yaml configuration file is included that is compatible with Microsoft Azure DevOps platform. The pipeline configuration runs a development pipeline that only triggers with branches that are not equal to main and a production branch that triggers when a merge occurs.
+
 <!-- Dir Summary -->
 # Directory Guide
 * .attachments
