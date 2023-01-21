@@ -36,3 +36,41 @@ variable "additional_tags" {
 variable "backend_bucket" {
   description = "Terraform backend bucket name"
 }
+
+// VPC Peering variables
+// VPC Peer 1
+
+variable "peer_id_1" {
+  description = "Account id of accepter vpc"
+}
+
+variable "peer_vpc_id_1" {
+  description = "VPC id of accepter vpc"
+}
+
+// Peer 2
+
+variable "peer_id_2" {
+  description = "Account id of accepter vpc"
+}
+
+variable "peer_vpc_id_2" {
+  description = "VPC id of accepter vpc"
+}
+
+// Peer 3
+
+variable "peer_id_3" {
+  description = "Account id of accepter vpc"
+}
+
+variable "peer_vpc_id_3" {
+  description = "VPC id of accepter vpc"
+}
+
+// EC2 Instance variables
+
+variable "instance_type" {
+  description = "Default instance type"
+  default     = "t2.micro"
+}
